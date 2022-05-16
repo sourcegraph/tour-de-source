@@ -64,7 +64,7 @@ https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint@HEAD/-/bl
 
 Why two ASTs instead of one?
 
-## Dueling ASTs
+## Dual ASTs
 
 TypeScript ESLint maintains two ASTs, because each provides a distinct set of useful functionality.
 
