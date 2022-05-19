@@ -1,6 +1,6 @@
 # [How TypeScript ESLint Works, a source-level introduction](https://sourcegraph.com/github.com/sourcegraph/tour-de-source/-/blob/TypeScript_ESLint.snb.md)
 
-*This post should be [read on Sourcegraph](https://sourcegraph.com/github.com/sourcegraph/tour-de-source/-/blob/TypeScript_ESLint.snb.md); otherwise the code snippets won't show, which is the entire point :)
+*This post should be [read on Sourcegraph](https://sourcegraph.com/github.com/sourcegraph/tour-de-source/-/blob/TypeScript_ESLint.snb.md); otherwise the code snippets won't show, which is the entire point :)*
 
 ![TypeScript and ESLint logos](https://user-images.githubusercontent.com/1646931/169179393-3f1db84a-080a-4887-9f9f-78ab9dc29d4c.png)
 
