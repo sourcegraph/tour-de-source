@@ -4,7 +4,7 @@
 
 ![TypeScript and ESLint logos](https://user-images.githubusercontent.com/1646931/169179393-3f1db84a-080a-4887-9f9f-78ab9dc29d4c.png)
 
-TypeScript ESLint is the de facto standard for linting in TypeScript. It's used by hundreds of thousands of projects and ensures code quality, security, and best practices across the TypeScript world. If you're deploying TypeScript into production, chances are you're using this in your toolchain.
+TypeScript ESLint is the de facto tool for linting in TypeScript. It's used by hundreds of thousands of projects and ensures code quality, security, and best practices across the TypeScript world. If you're deploying TypeScript into production, chances are you're using this in your toolchain.
 
 In this post, we provide a hands-on, technical introduction to how this essential static analysis tool works by tracing through its key code paths. We'll cover the following:
 
