@@ -91,7 +91,7 @@ In order to use both ASTs, the plugin must create both and construct a mapping b
 
 The key function is `parseAndGenerateServices`:
 
-https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint@HEAD/-/blob/packages/typescript-estree/src/parser.ts?L499-636
+https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint@3c0f2e31b9cd3824daf0909fb59754653984b813/-/blob/packages/typescript-estree/src/parser.ts?L499-502
 
 This function compiles the TypeScript from source:
 
