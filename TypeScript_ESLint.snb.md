@@ -31,7 +31,7 @@ https://sourcegraph.com/github.com/cypress-io/cypress/-/blob/packages/driver/src
 
 This anti-pattern is quite widespread, because it feels intuitive to use the for-in syntax to traverse an array. Doing so, however, may visit the array elements out-of-order. Instead `array.forEach` is recommended.
 
-As an entrypoint into the code, let's dive into the definition of this rule:
+Let's dive into the definition of this rule:
 
 https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint/-/blob/packages/eslint-plugin/src/rules/no-for-in-array.ts
 
