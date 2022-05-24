@@ -16,7 +16,7 @@ Read on!
 
 ## Overview
 
-TypeScript ESLint is implemented as an ESLint plugin. It has a few main modules, the most important of which are:
+TypeScript ESLint is implemented as a collection of packages that build on ESLint. It has a few main modules, the most important of which are:
 
 * `eslint-plugin`, which defines the ESLint plugin and the linting rules.
 * `parser` and `typescript-estree`, which are responsible for parsing TypeScript source code into an ESLint-compatible form, mapping from TypeScript ASTs to ESLint's AST representation (ESTree) and providing an API to query the AST from the rules.
