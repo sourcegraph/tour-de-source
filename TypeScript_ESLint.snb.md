@@ -49,7 +49,7 @@ There may be some unfamiliar syntax for some here. This code might look like it'
 
 This key will be used to match this rule with the name of an AST node type in the ESLint AST, so that the node argument will always have the type that the rule targets:
 
-https://sourcegraph.com/npm/typescript-eslint/types/-/blob/dist/generated/ast-spec.d.ts?L75
+https://sourcegraph.com/npm/typescript-eslint/types@540cca215af38ab1a49b6cde8bcb492f4b6e53c5/-/blob/dist/generated/ast-spec.d.ts?L75
 
 ## Type-checking
 
