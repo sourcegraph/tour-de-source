@@ -93,7 +93,7 @@ The key function is `parseAndGenerateServices`:
 
 https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint@3c0f2e31b9cd3824daf0909fb59754653984b813/-/blob/packages/typescript-estree/src/parser.ts?L499-502
 
-This function compiles the TypeScript from source:
+This function compiles the TypeScript from source here:
 
 https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint@3eab889022c9d1617f275017d6951f663ea57f24/-/blob/packages/typescript-estree/src/parser.ts?L595-602&subtree=true
 
