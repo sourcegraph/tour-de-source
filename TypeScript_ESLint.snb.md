@@ -117,7 +117,7 @@ https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint@3eab88902
 
 In this fashion, the TypeScript AST is converted by recursively traversing the AST and building the new ESLint one along the way. Both ASTs and the mapping between them are stored so they can be referenced by rules.
 
-## Conclusion
+## Next steps
 
 TypeScript ESLint is an amazing tool that brings the power of static analysis to multitudes of TypeScript projects. It is also an impressive case study of code reuse. Rather than build an entire linting project from scratch, it finds an elegant way to build on top of JavaScript's ESLint while integrating the TypeScript compiler to enable rules to take advantage of type information.
 
