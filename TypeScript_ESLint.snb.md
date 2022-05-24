@@ -23,13 +23,13 @@ TypeScript ESLint is implemented as a collection of packages that build on ESLin
 
 ## How rules work
 
-The purpose of the linter is to detect a set of patterns in source code that match common anti-patterns. These patterns are described in **rules**. To dive into the code, let's start with the definition of one such rule.
+The purpose of the linter is to detect a set of patterns in source code that match common anti-patterns. These patterns are described in **rules**. The docs contain a [complete list of these rules](https://typescript-eslint.io/rules/).
 
-The `no-for-in-array` rule disallows iterating over an array with a for-in loop. Here is an example of this pattern:
+To dive into the code, let's start with the definition of a simple rule. The `no-for-in-array` rule disallows iterating over an array with a for-in loop. Here is an example of this pattern:
 
 https://sourcegraph.com/github.com/cypress-io/cypress/-/blob/packages/driver/src/cypress/proxy-logging.ts?L13
 
-This anti-pattern is quite widespread, because it feels intuitive to use the for-in syntax to traverse an array. Doing so, however, may visit the array elements out-of-order; instead `array.forEach` is recommended.
+This anti-pattern is quite widespread, because it feels intuitive to use the for-in syntax to traverse an array. Doing so, however, may visit the array elements out-of-order. Instead `array.forEach` is recommended.
 
 As an entrypoint into the code, let's dive into the definition of this rule:
 
@@ -51,11 +51,19 @@ This key will be used to match this rule with the name of an AST node type in th
 
 https://sourcegraph.com/npm/typescript-eslint/types/-/blob/dist/generated/ast-spec.d.ts?L75
 
-This rule also makes use of the TypeScript type checker:
+## Type-checking
+
+One distinction between TypeScript ESLint and vanilla ESLint is that we have access to the TypeScript type checker and can therefore define rules that make use of type information.
+
+The `for-in-array` rule uses the type checker to determine if we are dealing with an array type:
 
 https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint/-/blob/packages/eslint-plugin/src/rules/no-for-in-array.ts?L23-24
 
-It is noteworthy that it handles **two ASTs**:
+https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint/-/blob/packages/eslint-plugin/src/rules/no-for-in-array.ts?L32-35
+
+## Dual ASTs
+
+In addition to invoking the type checker, the `for-in-array` rule also makes use of **two ASTs**:
 
 1. the ESTree representation used by ESLint
 2. the TypeScript AST emitted by the TypeScript compiler.
@@ -66,11 +74,7 @@ The `originalNode` value is from AST #2, an instance of ([`TSNode`](https://sour
 
 https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint@HEAD/-/blob/packages/eslint-plugin/src/rules/no-for-in-array.ts?L25#tab=def
 
-Why two ASTs instead of one?
-
-## Dual ASTs
-
-TypeScript ESLint maintains two ASTs, because each provides a distinct set of useful functionality.
+Why two ASTs instead of one? Because each provides a distinct set of useful functionality.
 
 1. The `TSESTree` representation is used by ESLint internally and enables the plugin to reuse much of the code and linting framework provided by ESLint.
 2. The `TSNode` representation is emitted by the TypeScript compiler and contains type information.
