@@ -101,7 +101,7 @@ https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint@3eab88902
 
 https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint@3eab889022c9d1617f275017d6951f663ea57f24/-/blob/packages/typescript-estree/src/parser.ts?L605-611&subtree=true
 
-The `astConverter` function makes use of the `Converter` class:
+The `astConverter` function makes use of the `Converter` class, which manages the state associated with the AST conversion:
 
 https://sourcegraph.com/github.com/typescript-eslint/typescript-eslint@3eab889022c9d1617f275017d6951f663ea57f24/-/blob/packages/typescript-estree/src/ast-converter.ts?L26-29&subtree=true
 
