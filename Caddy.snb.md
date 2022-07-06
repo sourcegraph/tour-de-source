@@ -1,6 +1,6 @@
 # How Caddy 2 works, a deep dive into the source
 
-![Caddy logo](https://storage.googleapis.com/sourcegraph-assets/blog/caddy-social.jpg)
+![Caddy logo](https://p21.p4.n0.cdn.getcloudapp.com/items/L1uXXzxR/018d26c2-1219-4ed9-b8d3-adbb6eb07ce6.jpg?v=63f6d9145196a4ffa9781bcf48ea81ec)
 
 Caddy is a production web server that prioritizes developer experience and extensibility. One of the magical things that works out of the box is automatic HTTPS. Its modular architecture makes it easy to extend and customize, and it has awesome docs coupled with a simple and straightforward configuration. Caddy is used in a huge range of environments, from small startups to large institutions like hospitals. With over 40,000 stars on GitHub, Caddy is one of the most popular production web servers today.
 
@@ -154,3 +154,14 @@ Caddy v2 serves as a fantastic case study in the modularization that takes place
 
 * You can get started with Caddy by visiting [caddyserver.com](https://caddyserver.com/).
 * Consider sponsoring Caddy's development as an open source project by [contributing to Caddy's creator, Matt Holt](https://github.com/sponsors/mholt).
+
+---
+
+### Want more?
+
+* Sign up for the [Tour de Source newsletter](https://tourdesource.substack.com/) 
+* Join the [Sourcegraph Community Discord](https://discord.gg/hrMeSAWZdH) 
+* Subscribe to our [podcast](https://about.sourcegraph.com/podcast)
+* Listen to Matt on the [Sourcegraph Podcast (2020)](https://about.sourcegraph.com/podcast/matt-holt)
+
+<img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=c15c075b-18f7-415a-919f-a1293e124151" />
