@@ -163,5 +163,6 @@ Caddy v2 serves as a fantastic case study in the modularization that takes place
 * Join the [Sourcegraph Community Discord](https://discord.gg/hrMeSAWZdH) 
 * Subscribe to our [podcast](https://about.sourcegraph.com/podcast)
 * Listen to Matt on the [Sourcegraph Podcast (2020)](https://about.sourcegraph.com/podcast/matt-holt)
+* 👩‍💻 See Sourcegraph in action! [Schedule time with an engineer](https://about.sourcegraph.com/demo?utm_source=caddy-notebook-footer&utm_medium=tour-de-source&utm_campaign=tour-de-source_caddy).
 
 <img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=c15c075b-18f7-415a-919f-a1293e124151" />
