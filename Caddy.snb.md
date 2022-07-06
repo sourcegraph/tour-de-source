@@ -1,6 +1,6 @@
 # How Caddy 2 works, a deep dive into the source
 
-![Caddy logo](https://p21.p4.n0.cdn.getcloudapp.com/items/L1uXXzxR/018d26c2-1219-4ed9-b8d3-adbb6eb07ce6.jpg?v=63f6d9145196a4ffa9781bcf48ea81ec)
+![Caddy logo](https://storage.googleapis.com/sourcegraph-assets/blog/tour-de-source-x-caddy.jpg)
 
 Caddy is a production web server that prioritizes developer experience and extensibility. One of the magical things that works out of the box is automatic HTTPS. Its modular architecture makes it easy to extend and customize, and it has awesome docs coupled with a simple and straightforward configuration. Caddy is used in a huge range of environments, from small startups to large institutions like hospitals. With over 40,000 stars on GitHub, Caddy is one of the most popular production web servers today.
 
