@@ -147,7 +147,7 @@ Arguably, the path that Caddy v1 took was the right one for the first version of
 
 Caddy v2 serves as a fantastic case study in the modularization that takes place as a successful software system transitions from "version 1" to "version 2", moving from a "let's do one thing well" mentality to a philosophy of enabling effective extensibility.
 
-<!-- TODO Meme: Futurama: "is this a web server or web framework?" -->
+![](https://storage.googleapis.com/sourcegraph-assets/blog/web-server-fry-meme-1200.png)
 
 ## Next steps
 
