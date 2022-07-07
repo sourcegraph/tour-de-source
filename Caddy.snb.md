@@ -5,10 +5,9 @@
 Caddy is a production web server that prioritizes developer experience and extensibility. One of the magical things that works out of the box is automatic HTTPS. Its modular architecture makes it easy to extend and customize, and it has awesome docs coupled with a simple and straightforward configuration. Caddy is used in a huge range of environments, from small startups to large institutions like hospitals. With over 40,000 stars on GitHub, Caddy is one of the most popular production web servers today.
 
 Key points of interest
-* [Caddy's highly modular architecture](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MTA3NQ==#overview-and-file-layout-446f80ff-8ceb-4a59-b7a6-58c53a4d9b73)
-* [The patterns Caddy uses for defining a featureful CLI](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MTA3NQ==#cli-4e193cb1-7929-4d89-a2a6-8223d5ad6dec)
-* [The curious fact that Caddy core knows nothing about HTTP or web protocols](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MTA3NQ==#ah-configuration-ebc69e78-c0f6-475c-8036-236eb1acb54f)
-* [How Caddy handles the magic of automatic HTTPS](https://sourcegraph.com/notebooks/Tm90ZWJvb2s6MTA3NQ==#automatic-https-792ac644-2030-4251-af78-ed0e7e57e7c8)
+* [The patterns Caddy uses for defining a featureful CLI](#cli-4e193cb1-7929-4d89-a2a6-8223d5ad6dec)
+* [The curious fact that Caddy core knows nothing about HTTP or web protocols](#ah-configuration-ebc69e78-c0f6-475c-8036-236eb1acb54f)
+* [How Caddy handles the magic of automatic HTTPS](#automatic-https-792ac644-2030-4251-af78-ed0e7e57e7c8)
 
 Let's take a deep dive into how Caddy works and some of the design decisions and patterns that make it a reliable, extensible, and delightful web server.
 
