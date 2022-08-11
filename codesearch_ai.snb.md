@@ -1,8 +1,15 @@
 # Code Walkthrough - codesearch.ai
 
-[codesearch.ai](https://codesearch.ai) is a semantic code search engine. It allows searching GitHub functions and StackOverflow answers using natural language queries. It uses HuggingFace Transformers under the hood, and the training procedure is inspired by a paper called [Text and Code Embeddings by Contrastive Pretraining](https://arxiv.org/pdf/2201.10005.pdf) from OpenAI. The [CodeSearchNet project](https://github.com/github/CodeSearchNet) served as a basis for data collection and cleaning.
+With the rise of transformer neural networks like BERT and GPT-3, we're starting to see more and more applications of machine learning to code. Sourcegraph is experimenting with such models to explore the possibilities to enable better code understanding by humans. As many folks are learning about these models and how to use them, we thought it would be helpful to write up some of our learnings and share an open-source example of how to train a model and use it for code search.
 
-In this notebook, we will explore the [codesearch.ai](https://codesearch.ai) implementation, including data collection and model training.
+[codesearch.ai](https://codesearch.ai) is an experimental AI-powered code search engine. It answers natural language queriers with functions indexed from GitHub.com and StackOverflow. Under the hood, it uses the open-source Hugging Face Transformers, and the training procedure is inspired by a paper called [Text and Code Embeddings by Contrastive Pretraining](https://arxiv.org/pdf/2201.10005.pdf) from OpenAI. OpenAI also offers an API service for transformer models, but we decided to use Hugging Face for this experiment as the OpenAI models are not open source. The [CodeSearchNet project](https://github.com/github/CodeSearchNet) served as a basis for data collection and cleaning.
+
+In this notebook, we will explore the [codesearch.ai](https://codesearch.ai) implementation, with both high-level descriptions of the approach and embedded code snippets powered by Sourcegraph code intelligence:
+
+1. The first section covers our process for data collection, with example code
+2. The second section covers model training, with example invocations of Hugging Face APIs
+
+> This is the third installment of our [Tour de Source](https://tourdesource.substack.com/) series of code-level deep dives into interesting open source projects.
 
 ## Data collection
 
@@ -297,3 +304,10 @@ python codesearch_ai_ml/prepare_faiss_index.py --base-model=models/base --fine-t
 Here is an example of how to search the index:
 
 https://sourcegraph.com/github.com/sourcegraph/codesearch.ai@cc20497d1b3614fcad36e658543211fce0b4c886/-/blob/codesearch_ai_ml/search.py?L14-25
+
+
+## Further exploration
+
+[Codesearch.ai](https://codesearch.ai/) is far from perfect and there's still much work to be done in the realm of applying machine learning to human code understanding. As we continue to explore this area, we'd love to hear from you if you have feedback as a user or would like to collaborate with us. Pop into [our Discord](https://discord.gg/SSCBGByJeu) to say hi!
+
+If you'd like to support our efforts as a business, you can spin up a Sourcegraph instance--we build a code search engine that alleviates the pain of working in large codebases. You can get it up and running in 5 minutes with a [single `docker run` command](https://docs.sourcegraph.com/#getting-started). If you try it out, feel free to pop into the aforementioned Discord and pepper us with any questions!
